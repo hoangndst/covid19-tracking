@@ -1,4 +1,4 @@
-import { FormControl, InputLabel, NativeSelect, makeStyles } from '@material-ui/core'
+import { FormControl, NativeSelect, makeStyles } from '@material-ui/core'
 import React from 'react'
 
 const useStyles = makeStyles((theme) => ({
