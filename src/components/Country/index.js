@@ -13,9 +13,7 @@ export default function Country({ value, handleOnChange, countries }) {
     const classes = useStyles();
     
     return (
-        <FormControl className={classes.FormControl}>
-            <InputLabel htmlFor="country-selector" shrink >Country</InputLabel>
-            
+        <FormControl style={{display: 'flex',  justifyContent:'center', alignItems:'center'}} className={classes.FormControl}>
             <NativeSelect
                 value={value}
                 onChange={handleOnChange}

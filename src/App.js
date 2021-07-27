@@ -44,12 +44,12 @@ function App() {
 
   return (
     <Container>
-    <Typography variant='h3' >
-    Coronavirus COVID19
+    
+    <Typography style = {{display: 'flex',justifyContent:'center', alignItems:'center'}}variant='h3' >
+     SARS-CoV-2
     </Typography>
-    <Typography>{moment().format('MMMM Do YYYY, h:mm A')}</Typography> 
+    <Typography style = {{display: 'flex',justifyContent:'center', alignItems:'center', marginBottom:'50px'}}>{moment().format('MMMM  Do  YYYY')}</Typography> 
       <Country countries={countries} handleOnChange={handleOnChange} value={selectedCountryID} />
-      
       <Highlight report={report} />
       <Summary report={report} selectedCountryID={selectedCountryID}/>
     </Container>
